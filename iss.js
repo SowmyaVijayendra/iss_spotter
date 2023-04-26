@@ -113,11 +113,7 @@ const nextISSTimesForMyLocation = function (callback) {
         }
         let passTimes = [];
         passes.forEach((element) => {
-          passTimes.push(
-            `Next pass at ${new Date(element.risetime)} for ${
-              element.duration
-            } seconds!`
-          );
+          passTimes.push(`Next pass at ${new Date(element.risetime)} for ${element.duration} seconds!`);
         });
         callback(null, passTimes);
       });
